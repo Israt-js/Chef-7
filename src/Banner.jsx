@@ -7,7 +7,7 @@ const Banner = () => {
             </div>
             <div className="">
                 <button className="border-none text-white bg-green-400 p-3 rounded-md justify-center ml-96">Explore Now</button>
-                <button className="p-3 text-white rounded-md justify-center pl-1 border-white">Our Feedback</button>
+                <button className="p-3 text-white rounded-md justify-center pl-1 border-gray-50">Our Feedback</button>
             </div>
         </div>
     )
