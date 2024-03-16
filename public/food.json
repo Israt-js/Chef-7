@@ -1,0 +1,57 @@
+[
+    {
+      "recipe_id": 1,
+      "recipe_name": "Chicken Stir-Fry",
+      "recipe_image": "Chicken Stir-Fry.jpg",
+      "short_description": "A delicious and easy-to-make chicken stir-fry with vegetables.",
+      "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaves", "400 g mushrooms"],
+      "preparing_time": "30 min",
+      "calories": "320 calories"
+    },
+    {
+      "recipe_id": 2,
+      "recipe_name": "Spaghetti Bolognese",
+      "recipe_image": "Spaghetti Bolognese.jpg",
+      "short_description": "Classic Italian pasta dish with rich tomato-based meat sauce.",
+      "ingredients": ["400 g spaghetti", "500 g ground beef", "1 onion", "2 cloves garlic", "500 ml tomato sauce"],
+      "preparing_time": "45 min",
+      "calories": "450 calories"
+    },
+    {
+      "recipe_id": 3,
+      "recipe_name": "Vegetable Curry",
+      "recipe_image": "Vegetable Curry.jpg",
+      "short_description": "A flavorful vegetarian curry packed with assorted vegetables and spices.",
+      "ingredients": ["300 g mixed vegetables", "200 ml coconut milk", "2 tbsp curry powder", "1 onion", "2 tomatoes"],
+      "preparing_time": "35 min",
+      "calories": "280 calories"
+    },
+    {
+      "recipe_id": 4,
+      "recipe_name": "Grilled Salmon",
+      "recipe_image": "grilled_salmon.jpg",
+      "short_description": "Healthy and succulent grilled salmon fillets seasoned with herbs and lemon.",
+      "ingredients": ["4 salmon fillets", "2 tbsp olive oil", "1 lemon", "Salt and pepper"],
+      "preparing_time": "25 min",
+      "calories": "220 calories"
+    },
+    {
+      "recipe_id": 5,
+      "recipe_name": "Caprese Salad",
+      "recipe_image": "Caprese Salad.jpg",
+      "short_description": "Simple and refreshing salad made with fresh tomatoes, mozzarella cheese, and basil.",
+      "ingredients": ["3 tomatoes", "200 g fresh mozzarella", "1 bunch fresh basil leaves", "2 tbsp balsamic vinegar"],
+      "preparing_time": "15 min",
+      "calories": "180 calories"
+    },
+    {
+      "recipe_id": 6,
+      "recipe_name": "Chocolate Chip Cookies",
+      "recipe_image": "chocolate_chip_cookies.jpg",
+      "short_description": "Classic homemade chocolate chip cookies that are soft and chewy.",
+      "ingredients": ["250 g all-purpose flour", "200 g unsalted butter", "200 g brown sugar", "1 egg", "200 g chocolate chips"],
+      "preparing_time": "20 min",
+      "calories": "150 calories per cookie"
+    }
+  ]
+  
