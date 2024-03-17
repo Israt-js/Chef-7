@@ -31,7 +31,7 @@ const Recipe = () => {
                 <p className="text-center">Our recipes are the best! Here are some popular dishes <br /> from our shop. We hope you enjoy them.</p>
             </div>
             <div className="flex">
-                <div className="grid grid-cols-2 p-10 w-[770px] gap-8">
+                <div className="grid grid-cols-2 p-10 w-[800px] gap-8">
                     {food.map((recipe, index) => (
                         <div key={index} className="border p-4 rounded-lg">
                             <img src={recipe.recipe_image} alt={recipe.recipe_name} className="w-full h-64 object-cover m-4 rounded-lg" />
@@ -74,6 +74,7 @@ const Recipe = () => {
                                 <td className="p-6 gap-10"><p>{selectedRecipe.preparing_time}</p></td>
                                 <td className="p-8 gap-10"><p>{selectedRecipe.calories}</p></td>
                                 <td onClick={startCook}><td><button onClick={butToast} className="prepare rounded-md p-2 m-6 bg-green-500 border-none">Preparing</button></td></td>
+                                <ToastContainer></ToastContainer>
                             </tr>
                         </tbody>
                         )}
