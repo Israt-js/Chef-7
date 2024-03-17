@@ -49,16 +49,15 @@ const Recipe = () => {
                  <td>Calories</td>
                 </tr>
                 {food.map((recipe) => (
-                <tr>
+                <div className="all-here border-none ">
+                 <tr>
                  <td className="p-4">{recipe.recipe_name}</td>
                  <td className="p-4">{recipe.preparing_time}</td>
-                 <td className="p-4">{recipe.calories}</td>
+                 <td className="p-4">{recipe.calories}</td><button className="border-none bg-green-600">Preparing</button>
                 </tr>
+               </div>
                 ))};
                 </table>
-                {food.map((recipe) => (
-                <button className="border-none bg-green-600">Preparing</button>
-                ))};
                 </div>
              </div>
              <div className="">
@@ -70,4 +69,3 @@ const Recipe = () => {
     );
 };
 
-export default Recipe;
