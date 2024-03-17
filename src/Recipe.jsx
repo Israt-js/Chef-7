@@ -5,13 +5,19 @@ import 'react-toastify/dist/ReactToastify.css';
 const Recipe = () => {
     const [food, setFood] = useState([]);
     const [selectedRecipe, setSelectedRecipe] = useState(null);
-    const [cookCount, setCookCount] = useState(0)
+    const [cookCount, setCookCount] = useState(0);
+    const [isPreparing, setIsPreparing] = useState(false);
     
     useEffect(() => {
         fetch('food.json')
             .then(res => res.json())
             .then(data => setFood(data))
     }, []);
+
+    const startCook = () => {
+        setIsPreparing(true);
+        setIsPreparing(isPreparing + 1)
+    };
  
     const toggleRecipeDetails = (recipe) => {
         setSelectedRecipe(recipe === selectedRecipe ? null : recipe);
@@ -47,28 +53,56 @@ const Recipe = () => {
                         </div>
                     ))}
                 </div>
-                <div className="">
-                    <div className="">
-                        <h2 className="p-4 text-3xl text-center font-semibold">Want to cook: {cookCount}</h2>
-                        <table className="p-4 m-4">
-                            <th className="p-12 gap-10">Name</th>
-                            <th className="p-12 gap-10">Time</th>
-                            <th className="p-12 gap-10">Calories</th>
-                        </table>
+
+             <div>
+                <div>
+                    <h2 className="p-4 text-3xl text-center font-semibold">Want to cook: {cookCount}</h2>
+                    <hr />
+                    <table className="p-4 m-4">
+                        <thead>
+                            <tr>
+                                <th className="p-12 gap-10">Name</th>
+                                <th className="p-12 gap-10">Time</th>
+                                <th className="p-12 gap-10">Calories</th>
+                                <th></th>
+                            </tr>
+                        </thead>
                         {selectedRecipe && (
-                            <div>
-                                <table className="p-4 m-4">
-                                    <td className="p-6 gap-10"><p>{selectedRecipe.recipe_name}</p></td>
-                                    <td className="p-6 gap-10"><p>{selectedRecipe.preparing_time}</p></td>
-                                    <td className="p-8 gap-10"><p>{selectedRecipe.calories}</p></td>
-                                    <td><button onClick={butToast} className="rounded-md p-2 m-6 bg-green-500 border-none">Preparing</button></td>
-                                    <ToastContainer />
-                                </table>
-                            </div>
+                        <tbody>
+                            <tr>
+                                <td className="p-6 gap-10"><p>{selectedRecipe.recipe_name}</p></td>
+                                <td className="p-6 gap-10"><p>{selectedRecipe.preparing_time}</p></td>
+                                <td className="p-8 gap-10"><p>{selectedRecipe.calories}</p></td>
+                                <td onClick={startCook}><td><button onClick={butToast} className="prepare rounded-md p-2 m-6 bg-green-500 border-none">Preparing</button></td></td>
+                            </tr>
+                        </tbody>
                         )}
-                    </div>
-                    <div className=""></div>
+                    </table>
                 </div>
+            
+                    <div className="">
+                            <h2 className="p-4 text-3xl text-center font-semibold">Currently cooking: {isPreparing}</h2>
+                            <hr />
+                            <table className="p-4 m-4">
+                                <thead>
+                                    <tr>
+                                        <th className="p-16 gap-10">Name</th>
+                                        <th className="p-16 gap-10">Time</th>
+                                        <th className="p-16 gap-10">Calories</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {selectedRecipe && isPreparing && (
+                                        <tr className="hhh">
+                                            <td className="p-10 gap-10"><p>{selectedRecipe.recipe_name}</p></td>
+                                            <td className="p-10 gap-10"><p>{selectedRecipe.preparing_time}</p></td>
+                                            <td className="p-10 gap-10"><p>{selectedRecipe.calories}</p></td>
+                                        </tr>
+                                    )}
+                                </tbody>
+                            </table>
+                        </div>
+            </div>
             </div>
         </div>
     );
