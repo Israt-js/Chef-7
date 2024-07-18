@@ -6,3 +6,9 @@
   background-image: linear-gradient(10deg, #070211 0%, rgba(0, 2, 0, 0.20) 94%), url("johnathan-macedo-4NQEvxW2_4w-unsplash.jpg");
   background-size: cover;
 }
+.nav{
+  background-image: url("HK-removebg-preview.png");
+  /* height: 30px;
+  width: 30px; */
+  background-repeat: no-repeat;
+}
