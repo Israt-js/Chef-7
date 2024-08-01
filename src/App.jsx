@@ -6,6 +6,8 @@ import Recipe from './Recipe';
 import Footer from './Footer';
 import './App.css';
 import About from './About';
+import Login from './login';
+import Register from './Register';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/" element={<Banner />} />
         <Route path="/recipe" element={<Recipe />} />
         <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
     </>
