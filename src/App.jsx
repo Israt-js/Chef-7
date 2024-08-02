@@ -8,6 +8,7 @@ import './App.css';
 import About from './About';
 import Login from './login';
 import Register from './Register';
+import Catagory from './Catagory';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/catagory" element={<Catagory />} />
       </Routes>
       <Footer />
     </>

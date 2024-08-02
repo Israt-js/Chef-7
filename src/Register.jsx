@@ -78,7 +78,7 @@ import { AuthContext } from './AuthPro';
               </div>
             </div>
             <div className="form-control mt-6">
-              <button type="submit" className="btn bg-slate-700 text-white">Register</button>
+              <button type="submit" className="btn bg-cyan-300 text-black">Register</button>
             </div>
           </form>
           {
