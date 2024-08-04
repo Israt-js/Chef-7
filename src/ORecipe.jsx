@@ -5,21 +5,21 @@ const mockRecipes = [
   {
     id: 1,
     title: "Spaghetti Carbonara",
-    image: "https://via.placeholder.com/400x300.png?text=Spaghetti+Carbonara",
+    image: "https://i.ibb.co/nkqzLfR/rob-wicks-f-DLBn8-X-Il-U-unsplash.jpg",
     ingredients: ["Spaghetti", "Eggs", "Parmesan cheese", "Pancetta", "Garlic"],
     instructions: "Cook spaghetti. In a separate pan, cook pancetta with garlic. Mix eggs and cheese, then combine with spaghetti and pancetta."
   },
   {
     id: 2,
     title: "Chicken Alfredo",
-    image: "https://via.placeholder.com/400x300.png?text=Chicken+Alfredo",
+    image: "https://i.ibb.co/SvLfcSk/engin-akyurt-Jrvcg9-My0-B4-unsplash.jpg",
     ingredients: ["Fettuccine", "Chicken breast", "Heavy cream", "Butter", "Parmesan cheese"],
     instructions: "Cook fettuccine. Sauté chicken in butter. Add cream and cheese to make the sauce, then mix with fettuccine and chicken."
   },
   {
     id: 3,
     title: "Greek Salad",
-    image: "https://via.placeholder.com/400x300.png?text=Greek+Salad",
+    image: "https://i.ibb.co/VjQvRS9/sebastian-pandelache-dwil-NQaj-Th0-unsplash.jpg",
     ingredients: ["Cucumber", "Tomatoes", "Red onion", "Olives", "Feta cheese"],
     instructions: "Chop vegetables and mix with olives and feta. Dress with olive oil and lemon juice."
   }
